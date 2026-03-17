@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Holy Roman Empire is neither holy,nor roman and not even an Emperor</title>
+    <title>The Holy Roman Empire</title>
     <style>
         :root {
             --bg-color: #0f172a;
@@ -11,30 +11,81 @@
             --accent: #38bdf8;
         }
 
+        /* Allow scrolling now */
         body {
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: var(--text-color);
+            min-height: 250vh; /* Extra height for scrolling */
+        }
+
+        /* Main Hero Section */
+        .hero {
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            font-family: 'Inter', -apple-system, sans-serif;
-            color: var(--text-color);
-            overflow: hidden;
+            position: sticky;
+            top: 0;
         }
 
         .container {
             text-align: center;
-            padding: 2rem;
+            padding: 2.5rem;
             max-width: 600px;
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            z-index: 2;
         }
 
+        /* Scrolling Content */
+        .scroll-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        .copyright-line {
+            margin-top: 60vh; /* Gap after the main content */
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            opacity: 0.3;
+            text-transform: uppercase;
+        }
+
+        /* The Secret Button */
+        .secret-area {
+            margin-top: 80vh; /* Deep at the bottom */
+            padding-bottom: 40px;
+        }
+
+        .btn-secret {
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.65rem;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .btn-secret:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: rgba(56, 189, 248, 0.05);
+            opacity: 1;
+        }
+
+        /* Original Styles */
         #lyric-text {
             font-size: 1.8rem;
             font-weight: 300;
@@ -51,7 +102,7 @@
             opacity: 0.8;
         }
 
-        button {
+        .main-btn {
             margin-top: 2rem;
             padding: 12px 24px;
             background: transparent;
@@ -60,40 +111,57 @@
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-size: 1rem;
         }
 
-        button:hover {
+        .main-btn:hover {
             background: var(--accent);
             color: var(--bg-color);
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+        }
+
+        /* Hide Scrollbar for a cleaner look but keep functionality */
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div id="lyric-text">"Loading the machine..."</div>
-        <div id="song-title">— Pink Floyd</div>
-        <button onclick="getRandomLyric()">New Line</button>
+    <section class="hero">
+        <div class="container">
+            <div id="lyric-text">"Loading the machine..."</div>
+            <div id="song-title">— Pink Floyd</div>
+            <button class="main-btn" onclick="getRandomLyric()">New Line</button>
+        </div>
+    </section>
+
+    <div class="scroll-content">
+        <div class="copyright-line">
+            Copyright Pink Floyd.......................
+        </div>
+
+        <div class="secret-area">
+            <a href="https://programming-roadmap.vercel.app/" class="btn-secret">Nepo_Babies</a>
+        </div>
     </div>
 
     <script>
         let lyricsDatabase = [];
 
-        // Fetch the "database" file
         fetch('lyrics.json')
             .then(response => response.json())
             .then(data => {
                 lyricsDatabase = data;
-                getRandomLyric(); // Show first lyric on load
+                getRandomLyric();
             });
 
         function getRandomLyric() {
             if (lyricsDatabase.length === 0) return;
             const randomIndex = Math.floor(Math.random() * lyricsDatabase.length);
             const item = lyricsDatabase[randomIndex];
-            
             document.getElementById('lyric-text').innerText = `"${item.line}"`;
             document.getElementById('song-title').innerText = `— ${item.song}`;
         }
