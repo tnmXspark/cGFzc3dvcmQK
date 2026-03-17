@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Floyd Randomizer</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --accent: #38bdf8;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: var(--text-color);
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        #lyric-text {
+            font-size: 1.8rem;
+            font-weight: 300;
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        #song-title {
+            font-size: 0.9rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.8;
+        }
+
+        button {
+            margin-top: 2rem;
+            padding: 12px 24px;
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background: var(--accent);
+            color: var(--bg-color);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="lyric-text">"Loading the machine..."</div>
+        <div id="song-title">— Pink Floyd</div>
+        <button onclick="getRandomLyric()">New Line</button>
+    </div>
+
+    <script>
+        let lyricsDatabase = [];
+
+        // Fetch the "database" file
+        fetch('lyrics.json')
+            .then(response => response.json())
+            .then(data => {
+                lyricsDatabase = data;
+                getRandomLyric(); // Show first lyric on load
+            });
+
+        function getRandomLyric() {
+            if (lyricsDatabase.length === 0) return;
+            const randomIndex = Math.floor(Math.random() * lyricsDatabase.length);
+            const item = lyricsDatabase[randomIndex];
+            
+            document.getElementById('lyric-text').innerText = `"${item.line}"`;
+            document.getElementById('song-title').innerText = `— ${item.song}`;
+        }
+    </script>
+</body>
+</html>
