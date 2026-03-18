@@ -1,22 +1,338 @@
 [
-  {"song": "Eclipse", "line": "All that you touch and all that you see is all your life will ever be."},
-  {"song": "Time", "line": "The sun is the same in a relative way but you're older, shorter of breath and one day closer to death."},
-  {"song": "Comfortably Numb", "line": "The child is grown, the dream is gone."},
-  {"song": "Wish You Were Here", "line": "How I wish, how I wish you were here."},
-  {"song": "Money", "line": "Money, it's a gas. Grab that cash with both hands and make a stash."},
-  {"song": "Breathe", "line": "Run, rabbit run. Dig that hole, forget the sun."},
-  {"song": "Shine On You Crazy Diamond", "line": "Remember when you were young, you shone like the sun."},
-  {"song": "Another Brick in the Wall Pt. 2", "line": "We don't need no education. We don't need no thought control."},
-  {"song": "High Hopes", "line": "The grass was greener, the light was brighter."},
-  {"song": "Hey You", "line": "Together we stand, divided we fall."},
-  {"song": "Echoes", "line": "Strangers passing in the street, by chance two separate glances meet."},
-  {"song": "Dogs", "line": "You have to be trusted by the people that you lie to."},
-  {"song": "Brain Damage", "line": "The lunatic is on the grass."},
-  {"song": "Us and Them", "line": "And after all, we're only ordinary men."},
-  {"song": "The Great Gig in the Sky", "line": "And I am not frightened of dying. Any time will do, I don't mind."},
-  {"song": "Mother", "line": "Mother, do you think they'll drop the bomb?"},
-  {"song": "Pigs (Three Different Ones)", "line": "Big man, pig man. Ha, ha, charade you are."},
-  {"song": "Sheep", "line": "Harmlessly passing your time in the grassland away."},
-  {"song": "Learning to Fly", "line": "Tongue-tied and twisted, just an earth-bound misfit, I."},
-  {"song": "Coming Back to Life", "line": "I knew the waiting had begun."}
+  {
+    "song": "Eclipse [1]",
+    "line": "All that you touch and all that you see is all your life will ever be."
+  },
+  {
+    "song": "Eclipse [2]",
+    "line": "And everything under the sun is in tune, but the sun is eclipsed by the moon."
+  },
+  {
+    "song": "Time [1]",
+    "line": "The sun is the same in a relative way but you're older, shorter of breath and one day closer to death."
+  },
+  {
+    "song": "Time [2]",
+    "line": "Ticking away the moments that make up a dull day."
+  },
+  {
+    "song": "Comfortably Numb [1]",
+    "line": "The child is grown, the dream is gone."
+  },
+  {
+    "song": "Comfortably Numb [2]",
+    "line": "Hello? Is there anybody in there? Just nod if you can hear me."
+  },
+  {
+    "song": "Comfortably Numb [3]",
+    "line": "There is no pain you are receding, a distant ship's smoke on the horizon."
+  },
+  {
+    "song": "Wish You Were Here [1]",
+    "line": "How I wish, how I wish you were here."
+  },
+  {
+    "song": "Wish You Were Here [2]",
+    "line": "We're just two lost souls swimming in a fish bowl, year after year."
+  },
+  {
+    "song": "Money [1]",
+    "line": "Money, it's a gas. Grab that cash with both hands and make a stash."
+  },
+  {
+    "song": "Money [2]",
+    "line": "Money, so they say, is the root of all evil today."
+  },
+  {
+    "song": "Breathe [1]",
+    "line": "Run, rabbit run. Dig that hole, forget the sun."
+  },
+  {
+    "song": "Breathe [2]",
+    "line": "Long you live and high you fly, and smiles you'll give and tears you'll cry."
+  },
+  {
+    "song": "Shine On You Crazy Diamond [1]",
+    "line": "Remember when you were young, you shone like the sun."
+  },
+  {
+    "song": "Shine On You Crazy Diamond [2]",
+    "line": "Come on you target for faraway laughter, come on you stranger, you legend, you martyr, and shine!"
+  },
+  {
+    "song": "Another Brick in the Wall Pt. 2 [1]",
+    "line": "We don't need no education. We don't need no thought control."
+  },
+  {
+    "song": "Another Brick in the Wall Pt. 2 [2]",
+    "line": "All in all it's just another brick in the wall."
+  },
+  {
+    "song": "High Hopes [1]",
+    "line": "The grass was greener, the light was brighter."
+  },
+  {
+    "song": "High Hopes [2]",
+    "line": "Looking beyond the embers of bridges glowing behind us."
+  },
+  {
+    "song": "Hey You [1]",
+    "line": "Together we stand, divided we fall."
+  },
+  {
+    "song": "Hey You [2]",
+    "line": "Hey you, out there in the cold, getting lonely, getting old, can you feel me?"
+  },
+  {
+    "song": "Echoes [1]",
+    "line": "Strangers passing in the street, by chance two separate glances meet."
+  },
+  {
+    "song": "Echoes [2]",
+    "line": "And I am you and what I see is me."
+  },
+  {
+    "song": "Dogs [1]",
+    "line": "You have to be trusted by the people that you lie to."
+  },
+  {
+    "song": "Dogs [2]",
+    "line": "And when you lose control, you'll reap the harvest you have sown."
+  },
+  {
+    "song": "Brain Damage [1]",
+    "line": "The lunatic is on the grass."
+  },
+  {
+    "song": "Brain Damage [2]",
+    "line": "And if the band you're in starts playing different tunes, I'll see you on the dark side of the moon."
+  },
+  {
+    "song": "Us and Them [1]",
+    "line": "And after all, we're only ordinary men."
+  },
+  {
+    "song": "Us and Them [2]",
+    "line": "Forward he cried from the rear, and the front rank died."
+  },
+  {
+    "song": "The Great Gig in the Sky [1]",
+    "line": "And I am not frightened of dying. Any time will do, I don't mind."
+  },
+  {
+    "song": "The Great Gig in the Sky [2]",
+    "line": "Why should I be frightened of dying? There's no reason for it, you've gotta go sometime."
+  },
+  {
+    "song": "Mother [1]",
+    "line": "Mother, do you think they'll drop the bomb?"
+  },
+  {
+    "song": "Mother [2]",
+    "line": "Mother, should I trust the government?"
+  },
+  {
+    "song": "Pigs (Three Different Ones) [1]",
+    "line": "Big man, pig man. Ha, ha, charade you are."
+  },
+  {
+    "song": "Pigs (Three Different Ones) [2]",
+    "line": "You well heeled big wheel, ha, ha, charade you are."
+  },
+  {
+    "song": "Sheep [1]",
+    "line": "Harmlessly passing your time in the grassland away."
+  },
+  {
+    "song": "Sheep [2]",
+    "line": "What do you get for pretending the danger's not real."
+  },
+  {
+    "song": "Learning to Fly [1]",
+    "line": "Tongue-tied and twisted, just an earth-bound misfit, I."
+  },
+  {
+    "song": "Learning to Fly [2]",
+    "line": "A soul in tension that's learning to fly."
+  },
+  {
+    "song": "Coming Back to Life [1]",
+    "line": "I knew the waiting had begun."
+  },
+  {
+    "song": "Coming Back to Life [2]",
+    "line": "Where were you when I was burned and broken?"
+  },
+  {
+    "song": "Welcome to the Machine [1]",
+    "line": "Welcome my son, welcome to the machine."
+  },
+  {
+    "song": "Welcome to the Machine [2]",
+    "line": "What did you dream? It's alright we told you what to dream."
+  },
+  {
+    "song": "Fearless [1]",
+    "line": "Fearlessly the idiot faced the crowd, smiling."
+  },
+  {
+    "song": "Fearless [2]",
+    "line": "And as you rise above the treeline and the clouds."
+  },
+  {
+    "song": "Have a Cigar [1]",
+    "line": "Come in here, dear boy, have a cigar. You're gonna go far."
+  },
+  {
+    "song": "Have a Cigar [2]",
+    "line": "And did we tell you the name of the game, boy? We call it riding the gravy train."
+  },
+  {
+    "song": "Have a Cigar [3]",
+    "line": "By the way, which one's Pink?"
+  },
+  {
+    "song": "Goodbye Blue Sky [1]",
+    "line": "Did you see the frightened ones? Did you hear the falling bombs?"
+  },
+  {
+    "song": "Goodbye Blue Sky [2]",
+    "line": "The flames are all long gone, but the pain lingers on."
+  },
+  {
+    "song": "In the Flesh? [1]",
+    "line": "So ya thought ya might like to go to the show."
+  },
+  {
+    "song": "In the Flesh? [2]",
+    "line": "If you wanna find out what's behind these cold eyes, you'll just have to claw your way through this disguise."
+  },
+  {
+    "song": "Run Like Hell [1]",
+    "line": "You better run all day and run all night."
+  },
+  {
+    "song": "Run Like Hell [2]",
+    "line": "With your empty smile and your hungry heart."
+  },
+  {
+    "song": "The Trial [1]",
+    "line": "Good morning, Worm your honor. The crown will plainly show the prisoner who now stands before you."
+  },
+  {
+    "song": "The Trial [2]",
+    "line": "Tear down the wall!"
+  },
+  {
+    "song": "Astronomy Domine [1]",
+    "line": "Lime and limpid green, a second scene."
+  },
+  {
+    "song": "Astronomy Domine [2]",
+    "line": "Jupiter and Saturn, Oberon, Miranda and Titania."
+  },
+  {
+    "song": "See Emily Play [1]",
+    "line": "Emily tries but misunderstands, ah ooh."
+  },
+  {
+    "song": "See Emily Play [2]",
+    "line": "There is no other day. Let's try it another way."
+  },
+  {
+    "song": "Set the Controls for the Heart of the Sun [1]",
+    "line": "Little by little the night turns around."
+  },
+  {
+    "song": "Set the Controls for the Heart of the Sun [2]",
+    "line": "Witness the man who raves at the wall, making the shape of his questions to heaven."
+  },
+  {
+    "song": "On the Turning Away [1]",
+    "line": "On the turning away from the pale and downtrodden."
+  },
+  {
+    "song": "On the Turning Away [2]",
+    "line": "No more turning away from the weak and the weary."
+  },
+  {
+    "song": "Keep Talking [1]",
+    "line": "For millions of years mankind lived just like the animals."
+  },
+  {
+    "song": "Keep Talking [2]",
+    "line": "All we need to do is make sure we keep talking."
+  },
+  {
+    "song": "Lost for Words [1]",
+    "line": "I was spending my time in the doldrums."
+  },
+  {
+    "song": "Lost for Words [2]",
+    "line": "So I open my door to my enemies, and I ask could we wipe the slate clean?"
+  },
+  {
+    "song": "Sorrow [1]",
+    "line": "The sweet smell of a great sorrow lies over the land."
+  },
+  {
+    "song": "Sorrow [2]",
+    "line": "One world, one soul, time pass, the river rolls."
+  },
+  {
+    "song": "Arnold Layne [1]",
+    "line": "Arnold Layne had a strange hobby."
+  },
+  {
+    "song": "Arnold Layne [2]",
+    "line": "Oh, Arnold Layne, it's not the same, takes two to know, two to know, two to know."
+  },
+  {
+    "song": "Fat Old Sun [1]",
+    "line": "When the fat old sun in the sky is falling."
+  },
+  {
+    "song": "Fat Old Sun [2]",
+    "line": "Summer evening birds are calling."
+  },
+  {
+    "song": "Childhood's End [1]",
+    "line": "You shout in your sleep. Perhaps the price is just too steep."
+  },
+  {
+    "song": "Childhood's End [2]",
+    "line": "Who are you and who am I to say we know the reason why?"
+  },
+  {
+    "song": "Nobody Home [1]",
+    "line": "I've got a little black book with my poems in."
+  },
+  {
+    "song": "Nobody Home [2]",
+    "line": "I've got thirteen channels of shit on the T.V. to choose from."
+  },
+  {
+    "song": "Vera [1]",
+    "line": "Does anybody here remember Vera Lynn?"
+  },
+  {
+    "song": "Vera [2]",
+    "line": "Remember how she said that we would meet again, some sunny day?"
+  },
+  {
+    "song": "Two Suns in the Sunset [1]",
+    "line": "In my rear view mirror the sun is going down."
+  },
+  {
+    "song": "Two Suns in the Sunset [2]",
+    "line": "And as the windshield melts and my tears evaporate, leaving only charcoal to defend."
+  },
+  {
+    "song": "Louder Than Words [1]",
+    "line": "We bitch and we fight, diss each other on sight."
+  },
+  {
+    "song": "Louder Than Words [2]",
+    "line": "But this thing that we do, these times spent together."
+  }
 ]
